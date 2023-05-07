@@ -6,53 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Proyecto codo a codo</title>
+    <title>Proyecto codo a codo</title> 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">A´manger catering</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <header>    
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href= "#nosotros"> A´manger catering </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"> Eventos</a>
-                  </li>
-                  <li class="nav-item dropdown">
+                    <a class="nav-link active" aria-current="page" href="#servicios"> Nuestros servicios</a></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos"> Eventos</a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Nuestros menús
+                        Nuestros menús
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Menú Gourmet</a></li>
-                      <li><a class="dropdown-item" href="#">Menú de Asado</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Menú casamientos</a></li>
+                        <li><a class="dropdown-item" href="#gourmet">Menú Gourmet</a></li>
+                        <li><a class="dropdown-item" href="#asado">Menú de Asado</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#casamiento">Menú casamientos</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link disabled">Proximamente</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+                </li>      
+            </ul>
             </div>
-          </nav>
-    </header>
+        </div>
+    </nav>
+</nav>
+</header>
 
-    <main>
-        <div id="carouselExample" class="carousel slide">
+<main>
+    <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="/imagenes/asado-post_7_112409.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>El Club de la cocina y A´manger catering</h5>
+                <h5> Lo mejos de dos mundos gastronomicos para vos</h5>
               </div>
               <div class="carousel-item">
                 <img src="/imagenes/foie_7_112409.webp" class="d-block w-100" alt="...">
@@ -69,15 +71,255 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
+        </div>
+        
+        <section>
+            <article>
+                <div class="quienes_somos" id="nosotros">
+                    <h3>  Quienes Somos </h3> 
+                </div>
+                <p>
+                    Somos un grupo de personas altamente capacitadas, con el propósito de lograr un producto de gran calidad al mejor precio. Nuestro objetivo es brindar servicios. No sólo la realización de un evento, sino la solución integral de las necesidades que surjan del mismo. Brindamos un producto global que le ofrece a nuestros clientes la tranquilidad de dedicarse solamente a disfrutar.
+                </p>
+            </article>
+        </section>
 
+        <div class="nuestros_servicios">
+            <section>        
+                <article>
+                    <div class="nuestros_servicios" id="servicios">
+                        <h3>  Nuestros Servicios </h3> 
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Eventos corporativos
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <strong>Organización de eventos empresariales</strong> Realizamos la organización integral de eventos corporativos, presentación de productos, charlas técnicas, capacitaciones, contamos con variedad de servicios desde coffe breaks, desayunos, almuerzos, cenas, viandas saludables. <code>Trabajamos con:</code> Laboratorio Bago, Laboratorio Roche, Clinica Cemic, Instituto universitario Cemic.
+                                </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Eventos Sociales
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Organización de eventos Sociales </strong> Realizamos eventos sociales, contamos con personal calificado, el cual los guiará para que el desarrollo del mismo, en la previa, durante y posterior al mismo, no sea ninguna preocupación para los protagonistas e invitados. Nos encargamos de todo para que les quede solo disfrutar de un momento único en sus vidas. <code>Eventos que realizamos:</code> Matrimonios, Bautismos, Cumpleaños, celebraciones religiosas, entre otros.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Desarrollos Especiales
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Desarrollos especiales</strong> Contamos con especialistas en diferentes areas, los cuales asesoran en la formación de empresas del rubro gastronomico, desarrollando negocios, formando al personal, realizando ingenieria de menú, costeos, armado y selección del equipo de trabajo. <code>Nuestros Asesores:</code> Son egresados de las escuelas mas prestigiosas de gastronomía de la nación.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        </div>
+        <div class="eventos" id="eventos">
+            <h3>  Eventos </h3> 
+            <div class="card text-bg-dark">
+                <img src="/imagenes/wp-20160521-20-51-09-pro_7_112409.webp" class="card-img" alt="Imagen de salones">
+                <div class="card-img-overlay">
+                    <h5 class="card-title" id="eventosdos">Nuestros Salones</h5>
+                    <p class="card-text" id="eventosdos">Nuestros salones se ubican en capital Federal y Gran Buenos Aires, contamos para realizar eventos pequeños de hasta 50 personas y salones grandes hasta 1200 personas</p>
+                    <p class="card-text"><small id="eventosdos"> Todos nuestros salones estan diseñados para hacer realidad tu sueño</small></p>
+                </div>
+            </div>
+        </div>
+          <Div class="menu" id="menu"> 
+            <h3> Menú elegidos especialmente para vos</h3>
+          </Div>  
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/imagenes/mmexport1495126575274_7_112409.webp" class="card-img-top" alt="almejas">
+                <div class="card-body">
+                  <h5 class="card-title" id="gourmet">Menú Gourmet</h5>
+                  <p class="card-text"> <strong> <u> Momento de Bienvenida: </u></strong>
 
+                    Bruschetta caprese
+                    Bruschetta de cebolla caramelizada y champiñones.
+                    Paleta de parmesano
+                    
+                    <strong> <u> Momento Tradicional:</u></strong>
+                    
+                    Shots de guacamole con nachos.
+                    Canapé de salmón en salazón al estilo escandinavo.
+                    Pan alemán de carpaccio de ternera con rúcula, laminas de parmesano y caramelo de aceto.
+                    Brochettes de pollo yakitori.
+                    
+                    <strong> <u> Momento Mediterráneo: </u></strong>
+                    
+                    Mini brochetas caprese con aceite de albahaca.
+                    Tostada de vegetales a la mediterránea con huevo frito de codorniz.
+                    Rabas blancas con mayonesa de ajo.
+                    <strong> <u> Islas de Pernil: </u></strong>
+                    
+                    Nuestro chef elaborara las mas deliciosas patas a baja temperatura o al asador, flameadas y fileteadas delante de los comensales y servidas con una gran variedad de salsas y panes artesanales.
+                    
+                    <strong> <u> Nuestro pernil: </u>  </strong>
+                    
+                    Pernil de Cerdo.
+                    Glaseado con Mostaza, miel y cerveza negra.
+                    <strong> <u> Momento Dulce: </u> </strong>
 
+                    Dando inicio a nuestra selección de tortas, acompañadas por islas de café e infusiones.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/imagenes/mmexport1495116402763_7_112409.webp" class="card-img-top" alt="menu asado">
+                <div class="card-body">
+                  <h5 class="card-title" id="asado">Menú Asado</h5>
+                  <p class="card-text">
+                    <strong> <u> Recepción: </strong></u>
 
+                    <strong> <u> Mesa de Campo: </strong></u>
+                    
+                    Tabla de Quesos
+                    
+                    Pategras, tybo, fontina, sardo, queso azul y mozzarella macerada en hierbas .
+                    Tabla de Fiambres y Embutidos
+                    
+                    Jamón Cocido de Cerdo, jamón Crudo Serrano, variedad de Embutidos (Salames y Longaniza), bondiola y lomo ahumado.
+                    Variedad de Panes
+                    
+                    <strong> <u> Momento de Bienvenida:</strong></u>
+                    
+                    Bruschetta caprese.
+                    Bruschetta de cebolla caramelizada y huevo.
+                    Bruschetta de papa con mayonesa de ajo asado.
+                    Variedad de panes de campo.
+                    <strong> <u> Asado Gourmet </strong></u>
+                    
+                    Tabla de achuras
+                    
+                    Chorizo bombón, morcilla bombon, chinchulines, mollejas, provolet y riñones a la provenzal en disco de arado.
+                    Variedad de Carnes
+                    
+                    Pamplonas de pollo rellenas de tomates secos y ciruelas.
+                    Costillar a la parrilla o a la cruz (si el espacio lo permite).
+                    Bife de chorizo.
+                    Bondiola de cerdo en costra de mostaza en grano y parmesano.
+                    Parrillada de verduras.
+                    Salsa Catalana (Romesco).
+                    Chimichurri.
+                    Salsa Criolla..</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/imagenes/textures_7_112409.webp" class="card-img-top" alt="postres">
+                <div class="card-body">
+                  <h5 class="card-title" id="casamiento">Menú Casamientos</h5>
+                  <p class="card-text">
+                     <strong> <u> Mesa de Campo:</strong></u>
 
-    </main>
+                     Iniciamos el evento con una variedad de embutidos y quesos, presentados en una serie de tablas o bandejas, para las mesas del  evento.
+                    
+                     “Tabla de Quesos”
+                    
+                     Pategras.
+                     Tybo.
+                     Fontina.
+                     Sardo.
+                     Queso azul.
+                     Mozzarella macerada en hierbas.
+                     “Tabla de Fiambres y Embutidos”
+                    
+                     Jamón Cocido de Cerdo.
+                     Jamón Crudo Serrano.
+                     Variedad de Embutidos (Salames y Longaniza).
+                     Bondiola
+                     lomo Ahumado
+                     “Variedad de Panes”
+                    
+                     Panes Saborizados.
+                     Pan de campo.
+                     Focaccia a las hierbas.
+                     “Adicional Acompañantes”
+                    
+                     Berenjenas en Escabeche.
+                     Dips de queso crema.
+                     Paletas de parmesano.
+                     <strong> <u> Plato Principal </u></strong>
 
+                     1 opción a elección
 
+                     Costillar de ternera braseado con papas rotas y mayonesa de ajo.
+                     Pollo deshuesado relleno de jamón, ternera y champiñones con salsa cinco quesos.
+                     <strong> <u> Postres:</strong></u>
+
+                     1 opción a elección
+
+                     Brownie con merengue Italiano y dulce de leche.
+                     Tiramisú.</p>
+                </div>
+              </div>
+            </div>
+            <form action="mail" mailto="claudiogberrini@gmail.com" method="post" enctype="text/plain" id="formulario">
+
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Cometarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Te gusto la pagina
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Tendría que mejorar
+                    </label>
+                    <br>
+                    <button type="reset" class="btn btn-outline-primary">Borrar Formulario</button>
+                    <br>
+                    <button type="submit" class="btn mb-3">
+                        <a href="mailto:claudiogberrini@gmail.com" target="_blank"> Enviar comentarios </a>
+                    </button>
+             </form>
+</main>
+
+<footer>
+
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Gracias por visitar nuestra página</h5>
+          <p class="card-text"> Podes contactarte con nosotros por:<a href="mailto:claudiogberrini@gmail.com">Mail</a>, o por Whatsapp:11-3317-27879</p>
+          <a href="#" class="btn btn-primary">Volver al inicio</a>
+        </div>
+      </div>
+</footer>
 
 
 
