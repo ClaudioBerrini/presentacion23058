@@ -16,6 +16,20 @@ h3{
     border: 3mm,black,solid;
     
 }   
+
+h3:hover {display: block;
+    background-color: rgba(11, 143, 225, 0.441);
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    padding: 150px,0px,0px,30px;
+    border-radius: 2px;
+    border: 5px,black,solid;
+    text-transform: uppercase;
+    text-shadow: 10px;
+
+}
 #nosotros {
     border: 5px, black, double;
     padding: 15px;
@@ -45,7 +59,7 @@ main {
 }
 
 #eventos {
-   color: aliceblue;
+   color: beige;
 
 }
 .card-text{
